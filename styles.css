@@ -71,6 +71,7 @@ body.dark{
     gap: 1rem;
     align-items: center;
     font-size: 1em;
+    font-weight: 700;
 }
 .toggle-button{
     width: 40px;
@@ -141,8 +142,8 @@ body.dark{
     top: -0.75rem;
     left: 0;
     width: 100%;
-    height: 3px;
-    border-radius: 3px 3px 0 0;
+    height: 5px;
+    border-radius: 5px 5px 0 0;
 }
 .facebook .border{
     background: var(--facebook);
@@ -183,8 +184,8 @@ body.dark{
     gap: 0.3rem;
 }
 .change span{
-    width: 10px;
-    height: 10px;
+    width: 1em;
+    height: 1em;
 }
 .change.positive{
     color: var(--positive);
@@ -244,4 +245,54 @@ body.dark{
     justify-content: flex-end;
     align-items: flex-end;
 }
-
+@media (max-width: 1150px){
+    body{
+        font-size: 10px;
+    }
+}
+@media (max-width: 1000px){
+    body{
+        font-size: 14px;
+    }
+    .head{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .mode{
+        justify-content: space-between;
+        border-top: 1px solid black;
+    }
+    .followers{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .overview{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .overview .heading{
+        grid-area: 1/1/1/ span 2;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+    .main{
+        padding: 5%;
+    }
+    .followers{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .overview{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .overview .heading{
+        grid-area: 1/1/1/1;
+    }
+}
