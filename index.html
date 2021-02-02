@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 </head>
-<body>
+<body class="dark">
   <div class="main">
     <div class="head">
       <div class="heading">
@@ -17,48 +17,52 @@
       </div>
       <div class="mode">
         <p>Dark Mode</p>
-        <div class="toggle-button">
-          <input type="checkbox" class="slider">
-          <span></span>
-        </div>
+        <label class="toggle-button">
+          <input type="checkbox" class="checkbox">
+          <span class="slider"></span>
+        </label>
       </div>
     </div>
     <div class="followers">
-      <div class="media-item">
+      <div class="media-item facebook">
         <p class="username">
           <img src="./images/icon-facebook.svg" alt="icon-facebook" class="icon">
           @nathanf
         </p>
-        <p class="followers">1987</p>
+        <p class="follower-count">1987</p>
         <p class="text">Followers</p>
-        <p class="change">12 Today</p>
+        <p class="change positive"> <span></span>12 Today</p>
+        <div class="border"></div>
       </div>
-      <div class="media-item">
+      <div class="media-item twitter">
         <p class="username">
           <img src="./images/icon-twitter.svg" alt="icon-twitter" class="icon">
           @nathanf
         </p>
-        <p class="followers">1044</p>
+        <p class="follower-count">1044</p>
         <p class="text">Followers</p>
-        <p class="change">99 Today</p>
+        <p class="change positive"><span></span>99 Today</p>
+        <div class="border"></div>
       </div>
-      <div class="media-item">
+      <div class="media-item instagram">
         <p class="username">
           <img src="./images/icon-instagram.svg" alt="icon-instagram" class="icon">
           @realnathanf
         </p>
-        <p class="followers">11k</p>
+        <p class="follower-count">11k</p>
         <p class="text">Followers</p>
-        <p class="change">1099 Today</p>
+        <p class="change positive"><span></span>1099 Today</p>
+        <div class="border"></div>
       </div>
-      <div class="media-item">
+      <div class="media-item youtube">
         <p class="username">
           <img src="./images/icon-youtube.svg" alt="icon-youtube" class="icon">
           Nathan F.
         </p>
-        <p class="followers">8239</p>
+        <p class="follower-count">8239</p>
         <p class="text">Subscribers</p>
-        <p class="change">144 Today</p>
+        <p class="change negative"><span></span>144 Today</p>
+        <div class="border"></div>
       </div>
     </div>
     <div class="overview">
@@ -66,52 +70,62 @@
       <div class="item">
         <p>Page Views</p>
         <img src="./images/icon-facebook.svg" alt="icon-facebook" class="icon">
+        <div></div>
         <p class="views">87</p>
-        <p class="change">3%</p>
+        <p class="change positive"><span></span>3%</p>
       </div>
       <div class="item">
         <p>Likes</p>
         <img src="./images/icon-facebook.svg" alt="icon-facebook" class="icon">
+        <div></div>
         <p class="views">52</p>
-        <p class="change">2%</p>
+        <p class="change negative"><span></span>2%</p>
       </div>
       <div class="item">
         <p>Likes</p>
         <img src="./images/icon-instagram.svg" alt="icon-instagram" class="icon">
+        <div></div>
         <p class="views">5462</p>
-        <p class="change">2257%</p>
+        <p class="change positive"><span></span>2257%</p>
       </div>
       <div class="item">
         <p>Profile Views</p>
         <img src="./images/icon-instagram.svg" alt="icon-instagram" class="icon">
+        <div></div>
         <p class="views">52K</p>
-        <p class="change">1375%</p>
+        <p class="change positive"><span></span>1375%</p>
       </div>
       <div class="item">
         <p>Retweets</p>
         <img src="./images/icon-twitter.svg" alt="icon-twitter" class="icon">
+        <div></div>
         <p class="views">117</p>
-        <p class="change">303%</p>
+        <p class="change positive"><span></span>303%</p>
       </div>
       <div class="item">
         <p>Likes</p>
         <img src="./images/icon-twitter.svg" alt="icon-twitter" class="icon">
+        <div></div>
         <p class="views">507</p>
-        <p class="change">553%</p>
+        <p class="change positive"><span></span>553%</p>
       </div>
       <div class="item">
         <p>Likes</p>
         <img src="./images/icon-youtube.svg" alt="icon-youtube" class="icon">
+        <div></div>
         <p class="views">107</p>
-        <p class="change">19%</p>
+        <p class="change negative"><span></span>19%</p>
       </div>
       <div class="item">
         <p>Total Views</p>
         <img src="./images/icon-youtube.svg" alt="icon-youtube" class="icon">
+        <div></div>
         <p class="views">1407</p>
-        <p class="change">12%</p>
+        <p class="change negative"><span></span>12%</p>
       </div>
     </div>
   </div>
+  <div class="bgpattern"></div>
+  <script src="./index.js"></script>
 </body>
 </html>
